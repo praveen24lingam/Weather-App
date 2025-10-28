@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anime Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>Anime Weather Dashboard</h1>
+
+  <input type="text" id="cityInput" placeholder="Enter city name..." />
+  <div>
+    <button id="searchBtn">Search</button>
+    <button id="locationBtn">Use My Location</button>
+  </div>
+
+  <div id="loader" class="hidden">Loading...</div>
+  <div id="error"></div>
+
+  <div id="weatherCard" class="hidden">
+    <img id="weatherIcon" alt="Weather icon" />
+    <h2 id="city"></h2>
+    <div id="temperature"></div>
+    <div id="description"></div>
+    <div id="details"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
